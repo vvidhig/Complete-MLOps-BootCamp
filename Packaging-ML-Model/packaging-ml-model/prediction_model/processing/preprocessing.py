@@ -1,4 +1,12 @@
 from sklearn.base import BaseEstimator,TransformerMixin
+
+from pathlib import Path
+import os
+import sys
+
+PACKAGE_ROOT = Path(os.path.abspath(os.path.dirname(__file__))).parent.parent
+sys.path.append(str(PACKAGE_ROOT))
+
 from prediction_model.config import config
 import numpy as np
 

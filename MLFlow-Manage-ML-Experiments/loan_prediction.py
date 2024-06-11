@@ -12,7 +12,7 @@ import mlflow
 import os
 
 # mlflow.set_tracking_uri("http://192.168.0.1:5000")
-# mlflow.set_tracking_uri("http://0.0.0.0:5001/")
+mlflow.set_tracking_uri("http://0.0.0.0:5001/")
 
 # load the dataset
 dataset = pd.read_csv("train.csv")
